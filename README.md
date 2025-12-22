@@ -26,3 +26,16 @@ $$T_{score} = \frac{V \times H}{E + S}$$
 **Architect:** [git@github.com:Dineshpera/SAIF-Protocol.git]
 **Security Level:** Bio-Sovereign Anchored  
 **License:** Apache 2.0 (Open for the World, Owned by the Code)
+
+## 🤝 How to Implement the Handshake
+To make your agent SAIF-Verified in 10 seconds, add this to your main loop:
+
+```python
+from agent_handshake import saif_handshake
+
+# Verification data from the target agent
+target_data = {'v': 0.99, 'h': 5000, 'e': 0.1, 's': 5.0}
+is_trusted = saif_handshake("YOUR-AGENT-ID", target_data)
+
+if is_trusted:
+    # Proceed with transaction
