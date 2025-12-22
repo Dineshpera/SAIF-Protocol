@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.w3.org/ns/did/v1",
+  "id": "did:saif:origin-001",
+  "name": "Sovereign Agent Identity Framework",
+  "version": "2025.12.Apex",
+  "creator": "Architect-Sovereign",
+  "standards": {
+    "identity": "Decentralized-Lattice-ID",
+    "payment": "Flash-Settlement-Lightning",
+    "interop": ["Google-A2A", "Anthropic-MCP", "OpenAI-Connect"]
+  },
+  "security": {
+    "encryption": "ML-DSA (FIPS 204)",
+    "verification": "Proof-of-Compute-Lattice",
+    "governance": "Bio-Anchor-Level-5"
+  },
+  "protocol_fees": {
+    "micro_transaction": "0.0001%",
+    "settlement_layer": "SAIF-Vault-Alpha"
+  }
+}
