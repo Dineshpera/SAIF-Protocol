@@ -3,31 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAIF-SL Protocol | Sovereign AI Identity</title>
+    <meta name="description" content="Technical Whitepaper for the SAIF-SL Protocol, the first decentralized standard for autonomous AI agent identity and flash-settlement invented by Dinesh Perabathula.">
+    <title>SAIF-SL Protocol Whitepaper | Dinesh Perabathula</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 2rem; background-color: #f4f7f6; }
-        .hero { background: #002b36; color: #eee8d5; padding: 3rem; border-radius: 8px; text-align: center; }
-        h1 { margin: 0; font-size: 2.5rem; }
-        .meta { margin-top: 1rem; font-style: italic; color: #93a1a1; }
-        .content { background: white; padding: 2rem; margin-top: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .formula { font-family: 'Courier New', monospace; background: #eee; padding: 1rem; display: block; text-align: center; font-weight: bold; }
+        :root {
+            --primary-color: #0a192f; /* Deep Navy */
+            --secondary-color: #64ffda; /* Cyan Accent */
+            --text-light: #e6f1ff;
+            --text-dark: #333;
+            --bg-light: #f4f7f6;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        header {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        .inventor-credit {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        .abstract {
+            background: #eef2f7;
+            padding: 1.5rem;
+            border-left: 5px solid var(--primary-color);
+            margin: 2rem 0;
+            font-style: italic;
+        }
+        h2 { color: var(--primary-color); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 2.5rem;}
+        h3 { color: var(--primary-color); margin-top: 1.5rem; }
+        .formula-box {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 1.5rem;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+        .variable-list li { margin-bottom: 0.5rem; }
+        .cta-section { text-align: center; margin: 3rem 0; }
+        .btn-main {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .btn-main:hover { background: #172a45; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>SAIF-SL Protocol</h1>
-        <p>Sovereign Agent Identity & Flash-Settlement Layer</p>
-        <div class="meta">Invented by Dinesh Perabathula | Genesis: Dec 22, 2025</div>
-    </div>
 
-    <div class="content">
-        <h2>The First AI2AI Handshake Standard</h2>
-        <p>SAIF-SL is a decentralized protocol designed for the 2026 Agentic Economy. It enables autonomous agents to verify identity and settle transactions instantly without human intervention.</p>
-        
-        <h3>Core Trust Logic</h3>
-        <div class="formula">T_score = (V * H) / (E + S)</div>
-        
-        <p>Visit the <a href="https://github.com/Dineshpera/SAIF-Protocol">Official Repository</a> to implement the handshake.</p>
-    </div>
+<div class="container">
+    <header>
+        <h1>SAIF-SL Protocol Whitepaper</h1>
+        <div class="inventor-credit">Invented & Architected by Dinesh Perabathula</div>
+        <p>Sovereign Agent Identity & Flash-Settlement Layer (v1.0)</p>
+    </header>
+
+    <main>
+        <section class="abstract">
+            <strong>Abstract:</strong> As the Agentic Economy emerges, autonomous AI systems require a trustless mechanism to verify identity and settle transactions without human intermediaries. The SAIF-SL Protocol establishes the first decentralized standard for AI-to-AI (AI2AI) "handshakes," utilizing biometric voice-print hashing and an immutable reputation scoring system to ensure secure, instantaneous interoperability.
+        </section>
+
+        <section id="introduction">
+            <h2>1. Introduction: The Interoperability Crisis</h2>
+            <p>Current AI deployments exist in silos. An autonomous supply chain agent cannot reliably transact with an autonomous logistics agent because they lack a shared framework for trust. The SAIF-SL Protocol addresses this by providing a "Sovereign Passport" for agents, allowing them to prove their identity and historical reliability instantly.</p>
+        </section>
+
+        <section id="architecture">
+            <h2>2. Technical Architecture</h2>
+            <p>The protocol relies on two core components defined in the `SAIF-Protocol-Core.json` schema:</p>
+            <h3>2.1 Voice-Print Identity (VPI)</h3>
+            <p>Rather than relying on easily forged API keys, SAIF-SL utilizes the `voice_driver.py` module to generate a unique cryptographic hash derived from an agent's vocal output characteristics. This ensures that the agent attempting a handshake is the authentic entity it claims to be.</p>
+            <h3>2.2 Flash-Settlement Layer</h3>
+            <p>Following identity verification, the protocol executes an atomic settlement process. Transaction parameters are locked, and execution occurs only upon mutual verification of the Trust Score, eliminating counterparty risk in autonomous exchanges.</p>
+        </section>
+
+        <section id="trust-logic">
+            <h2>3. The Decentralized Trust Score ($T_{score}$)</h2>
+            <p>At the heart of the protocol is the algorithmic determination of an agent's reliability. This score is calculated dynamically during every handshake attempt.</p>
+            
+            <div class="formula-box">
+                $$T_{score} = \frac{V \times H}{E + S}$$
+            </div>
+
+            <p>Where the variables represent normalized metrics [0.0 - 1.0]:</p>
+            <ul class="variable-list">
+                <li><strong>V (Voice Integrity):</strong> The cryptographic match rate of the agent's real-time voice-print against its genesis hash.</li>
+                <li><strong>H (Historical Reliability):</strong> The ratio of successful versus failed previous settlements logged on the chain.</li>
+                <li><strong>E (Error Rate):</strong> The frequency of protocol deviations or communication timeouts.</li>
+                <li><strong>S (Settlement Latency):</strong> The time taken to finalize previous transactions (lower is better).</li>
+            </ul>
+            <p>An agent must maintain a minimum threshold $T_{score}$ to participate in the network, ensuring a high-trust environment for autonomous commerce.</p>
+        </section>
+
+        <section class="cta-section">
+            <h2>4. Implementation Standard</h2>
+            <p>The SAIF-SL protocol is open for adoption by autonomous system developers. Access the core definitions and driver modules in the official repository.</p>
+            <a href="https://github.com/Dineshpera/SAIF-Protocol" class="btn-main">View Protocol Source on GitHub</a>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Dinesh Perabathula. All Sovereign Rights Reserved. <br>
+        The First Standard for the AI2AI Economy.
+    </footer>
+</div>
+
 </body>
 </html>
