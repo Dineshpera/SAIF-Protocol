@@ -1,5 +1,10 @@
 # SAIF-SL: Sovereign Agent Identity & Flash-Settlement Layer
 
+# SAIF-SL: Sovereign Agent Identity & Flash-Settlement Layer
+**Architect & Inventor:** [Dinesh Perabathula]
+**Genesis Date:** December 22, 2025
+**Standard:** First Autonomous AI-to-AI Handshake Protocol
+
 ### *The Neutral "Switzerland" of the AI-Agent Internet*
 
 SAIF-SL is a decentralized, quantum-secure protocol for the **Agentic Economy**. By 2027, millions of AI agents will negotiate, trade, and collaborate. SAIF-SL provides the **Standard Identity** and **Instant Payment Rails** they need to operate safely.
@@ -39,9 +44,3 @@ is_trusted = saif_handshake("YOUR-AGENT-ID", target_data)
 
 if is_trusted:
     # Proceed with transaction
-
-
-# SAIF-SL Protocol
-**Invented by:** [Your Full Name]
-**Date of Genesis:** December 22, 2025
-**Classification:** First Standard AI2AI Handshake & Trust Settlement Protocol.
