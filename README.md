@@ -1,7 +1,7 @@
 # SAIF-SL: Sovereign Agent Identity & Flash-Settlement Layer
 
 # SAIF-SL: Sovereign Agent Identity & Flash-Settlement Layer
-**Architect & Inventor:** [Dinesh Perabathula]
+**Architect & Inventor:** Dinesh Perabathula
 **Genesis Date:** December 22, 2025
 **Standard:** First Autonomous AI-to-AI Handshake Protocol
 
