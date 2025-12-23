@@ -28,7 +28,7 @@ $$T_{score} = \frac{V \times H}{E + S}$$
 - **S (Stake):** Economic collateral.
 
 ---
-**Architect:** [git@github.com:Dineshpera/SAIF-Protocol.git]
+**Architect:** git@github.com:Dineshpera/SAIF-Protocol.git
 **Security Level:** Bio-Sovereign Anchored  
 **License:** Apache 2.0 (Open for the World, Owned by the Code)
 
